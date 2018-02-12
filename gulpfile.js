@@ -119,7 +119,7 @@ gulp.task('copy:js', function (callback) {
 // Копирование шрифтов
 gulp.task('copy:fonts', function () {
   console.log('---------- Копирование шрифтов');
-  return gulp.src(dirs.srcPath + '/fonts/*.{ttf,woff,woff2,eot,svg}')
+  return gulp.src(dirs.srcPath + '/fonts/*.{ttf,woff,woff2,eot,svg,otf}')
     .pipe(newer(dirs.buildPath + '/fonts'))  // оставить в потоке только изменившиеся файлы
     .pipe(gulp.dest(dirs.buildPath + '/fonts'));
 });

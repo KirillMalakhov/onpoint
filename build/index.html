@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts/GothamPro-Black.woff">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+  </head>
+  <body>
+    <main id="fullpage">
+      <div id="section0" class="firstBlock section">
+        <h1 class="firstBlock__title">Всегда ли цели терапии СД2 на поверхности?</h1>
+        <p class="firstBlock__point firstPoint">Цель по HbA1c</p>
+        <p class="firstBlock__point secondPoint">Гипогликемия</p>
+        <p class="firstBlock__point thirdPoint">Осложнения СД</p>
+        <p class="firstBlock__point fourthPoint">СС риски</p><a href="" class="firstBlock__btnNext"> 
+          <div>Листайте вниз</div></a>
+      </div>
+      <div id="section1" class="secondBlock section">  
+        <h1 class="secondBlock__title">Основа терапии - патогенез СД2</h1><a href="" class="secondBlock__btnNext"> 
+          <div>Листайте вниз</div></a>
+      </div>
+      <div id="section2" class="thirdBlock owl-carousel section">
+        <div class="item firstItem"> </div>
+        <div class="item secondItem"> </div>
+        <div class="item thirdItem"> </div>
+      </div>
+    </main>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/jquery.fullpage.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+    $('#fullpage').fullpage({navigation: true, navigationPosition: 'right', showActiveTooltip: false, slidesNavigation: false, slidesNavPosition: 'bottom'});
+    });
+  </script>
+</html>
